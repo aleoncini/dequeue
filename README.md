@@ -43,8 +43,9 @@ You can then execute your native executable with: `./target/dequeue-1.0.0-SNAPSH
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
 
-# RESTEasy JAX-RS
+# Using the app
 
-<p>A Hello World RESTEasy resource</p>
-
-Guide: https://quarkus.io/guides/rest-json
+The application reads the last 50 rows of the dataframe CSV file that comes as output of the script that controls air pollution sensor.
+It actually reads the file named dataframe.csv, so start the application from the same directory where the file is written.
+Then you can access a page that contains a chart showing the data captured from the device. Access the page using the url:
+https://<ip_address_of_the_raspberry>:8080/
